@@ -22,6 +22,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Adaptive Select Theming Support**:
   - Refactored `adaptive-select.js` to utilize CSS custom properties (`--as-btn-*`, `--as-dd-*`) for seamless adaptation to light and dark page modes.
   - Added SVG extension branding icon (`icons/icon.svg`).
+- **Decoupled CSS & Performance Optimization**:
+  - Extracted embedded stylesheet into dedicated `adaptive-select.css`.
+  - Registered `adaptive-select.css` directly in `manifest.json` `content_scripts` to eliminate Flash of Unstyled Content (FOUC).
+  - Kept lightweight dynamic link injection fallback in `adaptive-select.js` for standalone portability.
 
 ---
 
