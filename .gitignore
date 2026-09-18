@@ -1,0 +1,7 @@
+# Agent configuration and instructions
+AGENTS.md
+agents.md
+
+# Environment and IDE
+.vscode/
+*.log

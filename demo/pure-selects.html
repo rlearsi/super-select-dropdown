@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Demonstração - Sem Scripts (Teste da Extensão)</title>
+    <title>Demo Page - Pure HTML (Extension Auto-Injection Test)</title>
 
     <style>
         body {
@@ -86,53 +86,53 @@
 
     <div class="container">
         <span class="badge">Pure HTML / No Extension CSS or JS</span>
-        <h1>Página Pura com Elementos Select</h1>
+        <h1>Pure Page with Native Select Elements</h1>
         <p class="subtitle">
-            Esta página não possui nenhuma inclusão de <code>adaptive-select.js</code> nem <code>adaptive-select.css</code>.
-            Quando a extensão do navegador estiver ativada, ela detectará e transformará todos os selects abaixo automaticamente!
+            This page does not include any <code>adaptive-select.js</code> or <code>adaptive-select.css</code> tags.
+            When the browser extension is enabled, it will automatically detect and transform all selects below!
         </p>
 
         <div class="field">
-            <label for="select-toggle">1 opção (Transforma em Toggle Switch)</label>
+            <label for="select-toggle">1 Option (Transforms into Toggle Switch)</label>
             <select id="select-toggle" name="notifications">
-                <option value="enabled">Receber notificações por e-mail</option>
+                <option value="enabled">Receive email notifications</option>
             </select>
         </div>
 
         <div class="field">
-            <label for="select-buttons-2">2 opções (Transforma em Botões Selecionáveis)</label>
+            <label for="select-buttons-2">2 Options (Transforms into Selectable Buttons)</label>
             <select id="select-buttons-2" name="plan">
-                <option value="monthly">Mensal</option>
-                <option value="annual" selected>Anual (20% desconto)</option>
+                <option value="monthly">Monthly</option>
+                <option value="annual" selected>Annual (20% discount)</option>
             </select>
         </div>
 
         <div class="field">
-            <label for="select-buttons-4">4 opções (Transforma em Grupo de Botões)</label>
+            <label for="select-buttons-4">4 Options (Transforms into Button Group)</label>
             <select id="select-buttons-4" name="priority">
-                <option value="low">Baixa</option>
-                <option value="medium" selected>Média</option>
-                <option value="high">Alta</option>
-                <option value="urgent">Urgente</option>
+                <option value="low">Low</option>
+                <option value="medium" selected>Medium</option>
+                <option value="high">High</option>
+                <option value="urgent">Urgent</option>
             </select>
         </div>
 
         <div class="field">
-            <label for="select-dropdown">6+ opções (Transforma em Dropdown Moderno)</label>
+            <label for="select-dropdown">6+ Options (Transforms into Modern Dark Dropdown)</label>
             <select id="select-dropdown" name="country">
-                <option value="br" selected>Brasil</option>
+                <option value="br" selected>Brazil</option>
                 <option value="ar">Argentina</option>
                 <option value="cl">Chile</option>
-                <option value="uy">Uruguai</option>
-                <option value="py">Paraguai</option>
+                <option value="uy">Uruguay</option>
+                <option value="py">Paraguay</option>
                 <option value="pe">Peru</option>
-                <option value="co">Colômbia</option>
-                <option value="mx">México</option>
+                <option value="co">Colombia</option>
+                <option value="mx">Mexico</option>
             </select>
         </div>
 
         <div class="note">
-            💡 <strong>Teste da Extensão:</strong> Abra a extensão clicando no ícone do navegador nesta página para ver o contador de selects encontrados (4 selects) e alternar o modo claro/escuro.
+            💡 <strong>Extension Test:</strong> Open the extension by clicking its browser icon on this page to see the detected select count (4 selects) and toggle between light and dark modes.
         </div>
     </div>
 
