@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Select Test</title>
+
+    <script src="./adaptive-select.js?v=2" defer></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: system-ui, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .demo {
+            max-width: 600px;
+            margin: auto;
+            padding: 24px;
+            background: white;
+            border-radius: 14px;
+        }
+
+        .field {
+            margin-bottom: 24px;
+        }
+
+        .field label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="demo">
+
+        <div class="field">
+            <label>2 opções</label>
+
+            <select>
+                <option value="yes">Sim</option>
+                <option value="no">Não</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>4 opções</label>
+
+            <select>
+                <option value="small">Pequeno</option>
+                <option value="medium">Médio</option>
+                <option value="large">Grande</option>
+                <option value="extra">Extra grande</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>6 opções</label>
+
+            <select>
+                <option>Brasil</option>
+                <option>Argentina</option>
+                <option>Chile</option>
+                <option>Uruguai</option>
+                <option>Paraguai</option>
+                <option>Bolívia</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>1 opção</label>
+
+            <select>
+                <option value="enabled">Ativar recurso</option>
+            </select>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Super Select & Dark Mode",
+  "version": "1.0.0",
+  "description": "Transforma selects tradicionais em componentes adaptativos e modernos, com alternador de tema claro/escuro.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icons/icon.svg"
+  },
+  "icons": {
+    "128": "icons/icon.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["adaptive-select.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

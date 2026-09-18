@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect x="14" y="14" width="100" height="100" rx="24" fill="url(#bgGrad)" filter="url(#shadow)" />
+
+  <!-- Select Box Representation -->
+  <rect x="28" y="34" width="72" height="24" rx="8" fill="#ffffff" />
+  <rect x="36" y="44" width="34" height="4" rx="2" fill="#64748b" />
+  
+  <!-- Arrow Down -->
+  <path d="M84 43 L90 50 L96 43" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- Adaptive Pills Representation -->
+  <rect x="28" y="68" width="34" height="26" rx="7" fill="#ffffff" fill-opacity="0.9" />
+  <circle cx="45" cy="81" r="5" fill="#3b82f6" />
+
+  <rect x="66" y="68" width="34" height="26" rx="7" fill="#1e1e24" />
+  <path d="M80 76 A 6 6 0 0 0 88 84 A 7 7 0 1 1 80 76 Z" fill="#facc15" />
+</svg>
