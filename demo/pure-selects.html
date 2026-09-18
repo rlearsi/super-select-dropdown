@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Demonstração - Sem Scripts (Teste da Extensão)</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: auto;
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin: 0 0 8px 0;
+            color: #0f172a;
+        }
+
+        p.subtitle {
+            margin: 0 0 28px 0;
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .field {
+            margin-bottom: 24px;
+        }
+
+        .field label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #334155;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px 14px;
+            font-size: 15px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            background-color: #fff;
+            color: #0f172a;
+            box-sizing: border-box;
+        }
+
+        .note {
+            margin-top: 32px;
+            padding: 14px 18px;
+            background: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #475569;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="badge">Pure HTML / No Extension CSS or JS</span>
+        <h1>Página Pura com Elementos Select</h1>
+        <p class="subtitle">
+            Esta página não possui nenhuma inclusão de <code>adaptive-select.js</code> nem <code>adaptive-select.css</code>.
+            Quando a extensão do navegador estiver ativada, ela detectará e transformará todos os selects abaixo automaticamente!
+        </p>
+
+        <div class="field">
+            <label for="select-toggle">1 opção (Transforma em Toggle Switch)</label>
+            <select id="select-toggle" name="notifications">
+                <option value="enabled">Receber notificações por e-mail</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="select-buttons-2">2 opções (Transforma em Botões Selecionáveis)</label>
+            <select id="select-buttons-2" name="plan">
+                <option value="monthly">Mensal</option>
+                <option value="annual" selected>Anual (20% desconto)</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="select-buttons-4">4 opções (Transforma em Grupo de Botões)</label>
+            <select id="select-buttons-4" name="priority">
+                <option value="low">Baixa</option>
+                <option value="medium" selected>Média</option>
+                <option value="high">Alta</option>
+                <option value="urgent">Urgente</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="select-dropdown">6+ opções (Transforma em Dropdown Moderno)</label>
+            <select id="select-dropdown" name="country">
+                <option value="br" selected>Brasil</option>
+                <option value="ar">Argentina</option>
+                <option value="cl">Chile</option>
+                <option value="uy">Uruguai</option>
+                <option value="py">Paraguai</option>
+                <option value="pe">Peru</option>
+                <option value="co">Colômbia</option>
+                <option value="mx">México</option>
+            </select>
+        </div>
+
+        <div class="note">
+            💡 <strong>Teste da Extensão:</strong> Abra a extensão clicando no ícone do navegador nesta página para ver o contador de selects encontrados (4 selects) e alternar o modo claro/escuro.
+        </div>
+    </div>
+
+</body>
+</html>
